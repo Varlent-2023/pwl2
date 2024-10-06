@@ -7,6 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// route recourse for product
+// route resource for product
 Route::resource('/products', \App\Http\Controllers\ProductController::class);
-// Route::resource('/supplier', \App\Http\Controllers\SupplierController::class);
+Route::resource('/suppliers', \App\Http\Controllers\SupplierController::class);
+Route::resource('/transaction', \App\Http\Controllers\TransaksiPenjualanController::class);
